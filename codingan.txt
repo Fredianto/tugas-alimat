@@ -1,0 +1,6 @@
+import pygame.image
+img_dirt = pygame.image.load('images/dirt.png').convert_alpha()
+img_bush = pygame.image.load('images/bush_small.png').convert_alpha()
+img_dirt.blit(img_bush, (0,0))
+images.add('tmp_dirt_with_bush', img_dirt)
+my_actor.image = 'tmp_dirt_with_bush'
